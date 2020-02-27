@@ -1,0 +1,7 @@
+n=input()
+i=0
+while(i<len(n)):
+    c=n.count(n[i])
+    print(n[i],end="")
+    print(c,end="")
+    i=i+c
