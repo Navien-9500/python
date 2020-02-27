@@ -1,0 +1,9 @@
+mport math
+a=int(input())
+b=math.sqrt(a)
+if(int(b)**2==a):
+    print("yes")
+else:
+    print("no")
+perfect square
+
