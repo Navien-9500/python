@@ -1,0 +1,201 @@
+kavin kumar <akavinkumar5@gmail.com>
+	
+09:49 (9 minutes ago)
+	
+to me, bharathkumar17bcs3010, rajpkrd2000
+a=int(input())
+b=int(input())
+for i in range(a,b):
+    if(i%10==i//100):
+        print(l)
+
+palindrome for 3 digits numbers
+
+
+direction
+mport math
+a=input().split()
+x,y=0,0
+for i in a:
+    if(i[-1]=="N"):
+        y+=int(i[:-1])
+    elif(i[-1]=="S"):
+        y-=int(i[:-1])
+    elif(i[-1]=="E"):
+        x+=int(i[:-1])
+    else:
+        x-=int(i[:-1])
+print("Your Coordinates:",x,y)
+if(x==0 and y>0):
+    way="S"
+elif(x==0 and y<0):
+    way="N"
+elif(x>0 and y==0):
+    way="W"
+elif(x<0 and y==0):
+    way="E"
+elif(x>0 and y>0):
+    way="SW"
+elif(x<0 and y<0):
+    way="NE"
+elif(x<0 and y>0):
+    way="SE"
+elif(x==0 and y==0):
+    way="You are at center"
+else:
+    way="NW"
+dis=math.sqrt((x**2)+(y**2))
+print("Required: ","%.1f %s"%(dis,way))
+
+
+odd 
+
+
+def odd(i,n):
+    if i<n:
+        print(2*i+1)
+        i=i+1
+        odd(i,n)
+n=int(input())
+odd(0,n)
+
+
+
+
+some programs in python
+
+
+
+---------- Forwarded message ---------
+From: raj pkrd2000 <rajpkrd2000@gmail.com>
+Date: Sat, Feb 22, 2020 at 6:01 PM
+Subject:
+To: <rajhavoc10@gmail.com>
+
+
+a=int(input())
+l=[]
+l.append(0)
+for i in range(0,a+1,2):
+    odd=l[i]//2
+    l.append(odd)
+    even=l[i]+2
+    l.append(even)
+print(l)
+series odd and even term
+
+
+
+a=input()
+b=("a","e","i","o","u","A","E","I","O","U")
+for i in a:
+    if i not in b:
+        print(i,end="")
+print consonants
+
+
+
+
+a=input()
+l=[]
+k=[]
+b=("a","e","i","o","u","A","E","I","O","U")
+for i in a:
+    if(i==" "):
+        l.append(i)
+        k.append(i)
+    else:
+        if i not in b:
+            l.append(i)
+        else:
+            k.append(i)
+s="".join(l)
+m="".join(k)
+print(s)
+print vowls and consonants
+
+
+
+
+n=int(input())
+a=1
+b=1
+l=[]
+l.append(a)
+l.append(b)
+sum=0
+for i in range (n-1):
+    sum=a+b
+    l.append(sum)
+    a=b
+    b=sum
+print(l)
+fibbinoci series
+
+
+
+num1=int(input())
+sum=0
+for i in range(1,num1):
+    if(num1%i==0):
+        sum=sum+i
+print(sum)
+perfect number r not
+
+
+import math
+a=int(input())
+b=math.sqrt(a)
+if(int(b)**2==a):
+    print("yes")
+else:
+    print("no")
+perfect square
+
+
+Email
+
+mailid=input();
+limail=mailid.split("@");
+beforeat=limail[0];
+after=limail[1].split(".");
+afterat=after[0];
+cnt=mailid.count("@");
+if(cnt==1 and len(beforeat)>=6 and len(afterat)>=3 and mailid[-4:]==".com"):
+    print("valid");
+else:
+    print("Invalid");
+
+a=int(input())
+b=int(input())
+sum=0
+k=0
+for i in range(a,b+1):
+    d=str(i)
+    e=len(d)
+    for j in range(0,e):
+        h=int(d[j])
+        f=h**e
+        sum=sum+f
+    if(i==sum):
+        k=1
+        print(sum)
+    sum=0
+    f=0
+if(k==0):
+    print("no")
+armstromg num series
+
+
+
+
+num1=int(input())
+sum=0
+fact=0
+for i in range(0,num1+1):
+    fact=4**i+i
+    sum=sum+fact
+    if(i==num1):
+        print(sum)
+    sum=0
+    fact=0
