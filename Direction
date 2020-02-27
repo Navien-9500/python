@@ -1,0 +1,34 @@
+rection
+mport math
+a=input().split()
+x,y=0,0
+for i in a:
+    if(i[-1]=="N"):
+        y+=int(i[:-1])
+    elif(i[-1]=="S"):
+        y-=int(i[:-1])
+    elif(i[-1]=="E"):
+        x+=int(i[:-1])
+    else:
+        x-=int(i[:-1])
+print("Your Coordinates:",x,y)
+if(x==0 and y>0):
+    way="S"
+elif(x==0 and y<0):
+    way="N"
+elif(x>0 and y==0):
+    way="W"
+elif(x<0 and y==0):
+    way="E"
+elif(x>0 and y>0):
+    way="SW"
+elif(x<0 and y<0):
+    way="NE"
+elif(x<0 and y>0):
+    way="SE"
+elif(x==0 and y==0):
+    way="You are at center"
+else:
+    way="NW"
+dis=math.sqrt((x**2)+(y**2))
+print("Required: ","%.1f %s"%(dis,way))
