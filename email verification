@@ -1,0 +1,10 @@
+mailid=input();
+limail=mailid.split("@");
+beforeat=limail[0];
+after=limail[1].split(".");
+afterat=after[0];
+cnt=mailid.count("@");
+if(cnt==1 and len(beforeat)>=6 and len(afterat)>=3 and mailid[-4:]==".com"):
+    print("valid");
+else:
+    print("Invalid");
