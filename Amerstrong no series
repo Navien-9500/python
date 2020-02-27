@@ -1,0 +1,18 @@
+a=int(input())
+b=int(input())
+sum=0
+k=0
+for i in range(a,b+1):
+    d=str(i)
+    e=len(d)
+    for j in range(0,e):
+        h=int(d[j])
+        f=h**e
+        sum=sum+f
+    if(i==sum):
+        k=1
+        print(sum)
+    sum=0
+    f=0
+if(k==0):
+    print("no")
