@@ -1,0 +1,10 @@
+a=int(input())
+l=[]
+l.append(0)
+for i in range(0,a+1,2):
+    odd=l[i]//2
+    l.append(odd)
+    even=l[i]+2
+    l.append(even)
+print(l)
+series odd and even term
